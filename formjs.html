@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="formjs.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 style="margin: 50px;">Fill Out The Form Below</h1>
+      <label for="fname">First name:</label>
+      <input type="text" id="fname" name="fname" />
+      <label for="lname">Last name:</label>
+      <input type="text" id="lname" name="lname" />
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="quantity" min="1" max="99" />
+      <label for="drop-down">Select Gender:</label>
+      <select name="drop-down" id="gender">
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+        <option value="Other">Other</option>
+      </select>
+      <label for="">Select Education</label>
+      <label id="inner-label" for="">Elementary</label>
+      <input type="radio" name="education" value="Elementary" />
+      <label id="inner-label"  for="">High School</label>
+      <input type="radio" name="education" value="high school" />
+      <label id="inner-label"  for="">University</label>
+      <input type="radio" name="education" value="University" />
+
+      <label for="color">select a color</label>
+      <input type="color" id="color_picker" />
+      <button id="submit" onclick="submit()">Submit</button>
+    </div>
+
+    <table style="display:none;" id="table">
+      <tr id="tableRow">
+        <th id="firstName">Name</th>
+        <th id="lastName">Surname</th>
+        <th id="age">Age</th>
+        <th id="genderr">Gender</th>
+        <th id="education">Education</th>
+      </tr>
+    </table>
+
+    <script src="formjs.js"></script>
+  </body>
+</html>
